@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+    
   <head>
       <!-- Starting over... with absolute positioning... we shall see how this goes... -->
     <meta charset="utf-8">
@@ -11,9 +12,29 @@
   </head>
     
 <style>
+
+@font-face {
+  font-family: "SF";
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.svg#San Francisco Display Medium") format("svg")
+}
+@font-face {
+  font-family: "SF";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.svg#San Francisco Display Thin") format("svg")
+}
+@font-face {
+  font-family: "SF-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.svg#San Francisco Display Bold") format("svg")
+}
+
     
      * {
-        font-family: "SF Pro Text", sans-serif;
+        font-family: "SF", sans-serif;
         color: #F5F7FC;
         }
     body {
@@ -239,6 +260,7 @@
         float: left; 
         background-color: #F5F7FC;
         padding: .75vw 1.92vw;
+        font-family: "SF-Bold", sans-serif;
         font-weight: 700;
         font-size: 1.75vw;
         width: 5.5vw;
@@ -476,6 +498,16 @@
         font-size: 1.125vw;
         margin-top: .5vw;
     }
+
+    /*Extra Box*/
+
+    .pusheen {
+        width: 20vw;
+        height: auto;
+        position: absolute;
+        left: 6vw;
+        top: 1.5vw;
+    }
     
 
     </style>
@@ -643,7 +675,7 @@
 
     </div>
     <div class="extra box">
-    <img src="https://raw.githubusercontent.com/lhl/pusheen-stickers/master/gif/pusheen/144884865685780.gif">
+    <img class="pusheen" src="https://raw.githubusercontent.com/lhl/pusheen-stickers/master/gif/pusheen/144884865685780.gif">
     </div>
      
       
